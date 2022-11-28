@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <style>
+        /* body{ width: 1446.4px; height: auto;} */
+        
+        header{width: 100%; height: auto;}
+        .section1{width: 100%; height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section2{width: 100%; height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+            background-color: #f8f8f8;
+        }
+        footer{width: 100%; height: auto;
+            /* margin-top: 60px; */
+        }
+
+        .header-top{  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #3c3f42;
+        }
+        .header-top-total{
+            width: 1180px;
+             height: 40px;
+             margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-top-left{ 
+            display: flex;
+         }
+       
+         .header-top-left>li:nth-child(2){
+            font-size: 14px;
+            font-weight: bold;      
+            width: 129px;
+            height: 40px;
+            margin-left: 20px;
+            background-image: url(./images/header_top_bg02.gif);
+            background-repeat: no-repeat;
+         }
+         .header-top-left>li:nth-child(3){
+            width: 129px;
+            height: 40px;
+            background-image: url(./images/header_top_bg03.gif);
+            background-repeat: no-repeat;
+         }
+         .header-top-left>li:nth-child(4){
+            width: 129px;
+            height: 40px;
+            background-image: url(./images/header_top_bg04.gif);
+            background-repeat: no-repeat;
+         }
+         .header-top-left>li:nth-child(5){
+            width: 129px;
+            height: 40px;
+            background-image: url(./images/header_top_bg05.gif);
+            background-repeat: no-repeat;
+         }
+         .header-top-left>li{
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+            font-weight: bold;
+           
+
+         }
+
+         .header-top-right{
+            display: flex;
+            
+         }
+         .monitor{
+            display: flex;
+            font-size: 12px;
+            color: white;
+            line-height: 40px;
+            margin-left: 15px;
+            padding-left: 15px;
+        }
+        .monitor>li>img{
+            margin-top: 12px;
+           
+        }
+        .monitor-text{
+            margin-left: 8px;
+            margin-right: 8px;
+            
+        }
+        .header-top-right>li{
+            line-height: 38px;
+            margin-left: 15px;
+            padding-left: 15px;
+          
+         }
+         .header-top-right>li>a{
+            font-size: 12px;
+            color: white;
+         }
+         /* header top 끝 */
+
+         .header-mid{
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+         }
+         .header-mid-container{
+            display: flex;
+            justify-content: space-between;    
+            margin-left: 30px;
+            align-items: center;
+            width: 1180px; height: 90px;
+
+         }
+         .header-mid-container>img{
+            width: 175px; height: 74px;
+         }
+         #search{
+            width: 570px; height: 50px;
+            border: 3px solid orange;
+            border-radius: 24px;
+            background-image: url(./images/search_btn.gif);
+            background-repeat: no-repeat;
+            background-position: 440px center;
+            padding: 15px;
+
+         }
+         .search-container{
+                  width: 520px; height: 47px;
+                  margin-bottom: 30px;
+            }
+        .serach-box{margin-left: 5px; }
+        .search-container>div{ padding: 15px; 
+            background-color: white;
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+        }
+        .sns-hide{
+            display: none;
+        }
+        .sns-hover{
+            position: relative;
+        }
+        .sns-hover:hover >.sns-hide{
+            display: block;
+            position: absolute;
+            top: 30px;
+        }
+
+        .weather{
+           
+            /* display: inline-block; */
+             border: 1px solid #f0f1f2;
+             height: 50px;
+                width: 210px;
+            border-radius: 15px;
+             line-height: 22px;
+             font-size: 14px;
+        }
+        .weather a{ display: block;
+            text-align: center;
+        }
+        
+        .gnb{width: 100%; height: auto;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid orange;
+           
+        }
+        .gnb-id{ 
+            width: 1180px; height: 53px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 20px 0px 20px;
+        }
+        .gnb-id>li{
+            font-size: 17px;
+            font-weight: bold;
+            color: #424242;
+        }
+        .gnb-first{
+            width: 185px;
+            height: 53px;
+            background: linear-gradient(90deg, #ea3d01, #ea6916);
+            text-align: center;
+            line-height: 53px;
+            color: white;
+        }
+        .gnb-first>a{
+            text-decoration: none;
+        }
+        .gnb-first>a>span{
+            font-size: 17px;
+             font-weight: bold;
+            color: #fff;
+            margin: 0 0 0 10px;
+        }
+        .gnb-first>a>span>img{
+            margin-left: 5px;
+            margin-bottom: 5px;
+            vertical-align: middle;
+        }
+
+        .main-Banner{
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .Banner-ul{
+            display: flex;
+            justify-content: center;
+            
+           
+        }
+       .Banner-ul>.aa>li:nth-child(1){
+        width: 319px; height: 277px;
+        background-image: url(./images/img_mayor04_re.gif);
+        background-color: #ebeae6;
+        padding: 55px 0 0 155px;
+       }
+       .Banner-ul>.aa>li:nth-child(1)>span{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+            font-size: 32.15px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #0b6dff;
+            font-weight: 900;
+       }
+       .Banner-ul>li:nth-child(3){
+            width: 80px; height: 65px; background-color: antiquewhite;       
+       }
+       .aa{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-left: 20px;
+       }
+       .sidebar{
+        position: fixed;
+        bottom: -166px;
+        right: 0px;
+        max-width: 63px;
+        height: calc(100% - 272px);
+        z-index: 99;
+       }
+       .sidebar>li{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        margin-left: px;
+       }
+       .sidebar li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 5px;
+       }
+       .sidebar>li:nth-child(1){
+        background-color: orange;
+       }
+       .sidebar>li:nth-child(2){
+        background-color: #6e6f58;
+       }
+       .sidebar>li:nth-child(3){
+        background-color: #af905f;
+       }
+       .sidebar>li:nth-child(4){
+        background-color: #e0ab5f;
+       }
+       .lq{
+        display: block;
+        padding-left: 10px;
+       }
+       
+       .side-text{
+        font-size: 14px; 
+            /* margin-top: px; */
+            color: white;
+            display: block;
+            padding-left: 5px;
+       }
+       .mayor-box{
+            width: 161px;
+            height: 30px;
+            background: #002c69;
+            color: #fff;
+            font-size: 14px;
+            line-height: 30px;
+            position: absolute;
+            top: 215px;
+            left: 20px;
+            text-align: center;
+       }
+       .mayor-box>img{
+        padding-left: 5px;
+        padding-top: 5px;
+       }
+
+       .bb{
+        display: flex;
+        margin-top: 3px;
+       }
+       .bb>li{
+        text-align: center;
+        padding-top: 11px;
+        font-size: 14px;
+        margin-right: 5px;
+       }
+       .bb>li>a{
+        text-decoration: none;
+       }
+       .bb>li:nth-child(1):hover{
+        background-color: orange;
+        
+       }
+       .bb>li:nth-child(2):hover{
+        background-color: orange;
+       }
+       .bb>li:nth-child(3):hover{
+        background-color: orange;
+       }
+       .bb>li:nth-child(4):hover{
+        background-color: orange;
+       }
+       .bb>li:nth-child(1){
+        width: 76px; height: 65px;
+        background-color: antiquewhite;
+       }
+       .bb>li:nth-child(2){
+        width: 76px; height: 65px;
+        background-color: antiquewhite;
+       }
+       .bb>li:nth-child(3){
+        width: 76px; height: 65px;
+        background-color: antiquewhite;
+       }
+       .bb>li:nth-child(4){
+        width: 76px; height: 65px;
+        background-color: antiquewhite;
+       }
+
+       .sub-Banner{
+        display: flex;
+        margin-top: 30px;
+       
+        /* justify-content: space-between; */
+       }
+       .sub-left{
+        width: 260px; height: 343px;
+        background-image: url(./images/main_jebu_bg.gif);
+       }
+       .jebu>li:nth-child(1){ width: 200px;
+            display: flex;
+            justify-content:space-between;
+            margin: 20px 0 20px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+       }
+       .jebu>li:nth-child(2){
+        margin-left: 35px;
+        background-image: url(./images/sea_day_bg.gif);
+        width: 200px; height: 47px;
+        text-align: center;
+        line-height: 47px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #0186d0;
+        padding-top: 5px;
+       }
+       .jebu>li:nth-child(3){
+            width: 200px; height: 40px;
+            background-color: rgba(4, 29, 89, 0.2);
+            margin-top: 2px;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: 900;
+            color: white;
+            text-align: center;
+            margin-left: 35px;
+       }
+       .jebu>li:nth-child(4){
+             width: 200px; height: 40px;
+            background-color: rgba(4, 29, 89, 0.2);
+            margin-top: 2px;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: 900;
+            color: white;
+            text-align: center;
+            margin-left: 35px;
+       }
+
+       .sub-mid{
+        margin-left: 20px;
+       }
+       
+       
+        
+        .sub-right{
+            margin-left: 20px;
+        }
+        .sub-r-top{
+            width: 320px; height: 298px;
+            background-image: url(./images/subbanner.png);
+            background-size: cover;
+        }
+        .sub-r-bot{
+            width: 320px; height: 45px;
+            background-color: #f2f3f5;;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 50px;
+        }
+        .sub-r-bot>li{
+            margin-right: 40px;
+        }
+        .sub-r-bot>li>span{
+            color: orange;
+        }
+        .service{  
+           margin-top: 40px;
+        }
+        .serviceimg{ width: 176px; height: 265px;
+            
+            float: left;
+            margin-right: 40px;
+            margin-top: 25px;
+            background-image: url(./images/service_title.gif);
+        }
+        .table-2{
+            float: right;
+            width: 976px; height: 282px;
+            
+        }
+        
+        table {
+             width: 100%;
+             display: flex;
+             border: 1px solid #e0e0e0;
+             border-collapse: collapse;
+             
+            }
+        .table{width: 560px; height: 343px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 10px 30px 0 0;
+        
+        }
+        .table-title>li{
+            margin-right: 30px;
+           
+        }
+        .table-title{ width: 558px; height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .table-title>li:nth-child(1){
+            font-weight: bold;
+            color: #424242;
+            background-image: url(./images/mayor_list.gif);
+            background-position: bottom;
+         background-repeat: repeat-x;
+            padding-bottom: 1px;
+        }
+        tr, td {
+             border: 1px solid #444444;
+        }
+        td{
+            width: 193px; height: 70px;
+            text-align: center;
+            
+        }
+        
+        .table-contents>li{
+         
+            list-style: disc;
+            margin-top: 15px;
+            margin-left: 50px;
+            font-size: 14px;
+            letter-spacing: 0.01px;
+        }
+        .table-contents>li>time{
+            float: right;
+        }        
+
+        .bq{
+            font-size: 14px;
+            line-height: 22px;
+            /* color: #898989; */
+            color: #888;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;
+            height: 44px;
+            margin-top: -13px;
+        }
+
+        .sub-service{
+            width: 100%; height: auto;
+            display: flex; 
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .sub-info{
+            
+            width: 880px; height: 282px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .table-tr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            border: 1px solid #e0e0e0;
+            padding-left: 15px;
+    
+        }
+        .table-td{ width: 194px; height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border: none; 
+            border: 1px solid #e0e0e0;
+        }
+        .table-td>img{
+            margin-right: 10px;
+        }
+        .title{
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 20px;
+            
+        }
+        .title>li>strong{
+            font-size: 20px;
+        }
+        
+        .work-btn{ 
+            /* text-align: center; */ width: 149px; height: 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .work-btn>div{
+            
+            
+        }
+        .work-btn>img{
+            margin-left: 100px;
+        }
+        
+
+        .work-box{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .work-box>li{
+            width: 248px; height: 172px;
+            border: 1px solid #e0e0e0;
+        }
+        .box1{
+            padding: 15px;
+            line-height: 0px;
+        }
+        .box1-s{
+            line-height: 30px;
+        }
+        .box1-s2{
+            margin-top: 5px;
+            line-height: 20px;
+            text-overflow: ellipsis;
+            display: block;
+        }
+        .box1-s3{
+            display: block;
+            margin-top: 32px;
+        }
+        .box1-s3 time{
+            color: orange;
+        }
+
+        .two-info{
+            margin-left: 20px;
+        }
+        .two-info-f{
+            width: 280px; height: 130px;
+            border: 1px solid #e0e0e0;
+            background-image: url(./images/main_con02_rgt_ico01.gif);
+            background-size: 70px;
+            background-position: 180px 50px;
+            background-repeat: no-repeat;
+        }
+        .info-f-a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 25px 28px;
+            position: relative;
+        }
+        .info-f-a>span:nth-child(1){
+            font-size: 20px;
+            font-weight: bold;
+            color: #424242;
+            margin-bottom: 13px;
+            display: block;
+        }
+        .info-f-a>span:nth-child(2){
+            font-size: 15px;
+             line-height: 20px;
+            color: #888;
+           
+        }
+
+        .two-info-l{
+            margin-top: 20px;
+            width: 280px; height: 130px;
+            border: 1px solid #e0e0e0;
+            background-image: url(./images/main_con02_rgt_ico02.gif);
+            background-size: 70px;
+            background-position: 190px 60px;
+            background-repeat: no-repeat;
+        }
+        .info-l-a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 25px 28px;
+            position: relative;
+        }
+        .info-l-a>span:nth-child(1){
+            font-size: 20px;
+            font-weight: bold;
+            color: #424242;
+            margin-bottom: 13px;
+            display: block;
+        }
+        .info-l-a>span:nth-child(2){
+            font-size: 15px;
+             line-height: 20px;
+            color: #888;  
+        }
+
+        .footer-top{
+            background-color: #3b3b3b;
+            display: flex;
+            justify-content: center;
+        }
+        .ftop-link>li{
+            float: left;
+        }
+        .ftop-link>li>a{
+            display: block;
+            width: 394px;
+            height: 66px;
+             font-size: 20px;
+            color: #e5e5e5;
+            line-height: 24px;
+            padding: 18px;
+             padding-right: 40px;
+            position: relative;
+        }
+        .plus{
+            font-size: 24px;
+        }
+
+        .footer-mid{
+            width: 100%;
+            height: auto;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        .fmid-div{
+            width: 1180px;
+            height: 64px;
+            margin: 0 auto;
+            
+            
+        }
+        .fmid-ul{
+            display: flex;
+            justify-content: center;
+            margin-right: 200px;
+            line-height: 64px; 
+            font-size: 14px;
+             color: #b7b6b6;
+            letter-spacing: -0.035em;
+            
+        }
+        .fmid-ul>li{
+            color: white;
+            margin-left: 15px;
+            padding-left: 5px;
+        }
+        .fmid-ul>li>a{
+            text-decoration: none;
+            
+        }
+        ul .orange{
+            color: orange;
+        }
+
+        .footer-bot{
+            width: 1180px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .fb-ul{
+            display: flex;
+            justify-content: center;
+        }
+        .fb-ul>li:nth-child(1){
+            margin-top: 35px;
+            margin-bottom: 58px;
+        }
+        .fb-ul>li:nth-child(2){
+            width: 684px;
+            height: auto;
+            margin-left: 33px;
+            margin-top: 29px;
+        }
+        .right{
+            font-size: 12px;
+            color: #848484;
+            margin-top: 14px;
+        }
+        .fb-ul>li:nth-child(3){
+            margin-top: 36px;
+        }
+        .fb-ul>li:nth-child(4){
+            margin-top: 36px;
+            margin-left: 20px;
+        }
+        .ftop-li>a{
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-total">
+                    <ul class="header-top-left">
+                        <li >
+                            <a href="index.html" class="no-line">
+                                <img src="./images/head_logo.gif" alt="" width="80px">
+                            </a>
+                        </li>
+                        <li><a href="#" ><img src="./images/si_icon.gif" alt=""> 화성시의회</a></li>
+                        <li><a href="#" ><img src="./images/tour_icon.gif" alt=""> 문화관광</a></li>
+                        <li><a href="#" ><img src="./images/event_icon.gif" alt=""> 행사축제교육</a></li>
+                        <li><a href="#" ><img src="./images/physical_icon.gif" alt=""> 체육시설예약</a></li>
+                    </ul>
+                    <ul class="header-top-right">
+                        <li><a href="#">로그인</a></li>
+                        <ul class="monitor">
+                            <li><img src="./images/plus_icon.gif" alt=""></li>
+                            <li class="monitor-text">화면크기</li>
+                            <li><img src="./images/minus_icon.gif" alt=""></li>
+                        </ul>
+                        <li class="sns-hover"><a href="#" >공식SNS</a>
+                            <ul class="sns-hide">
+                                <!-- <li><img src="./images/facebook.gif" alt=""> 페이스북</li>
+                                <li>인스타그램</li>
+                                <li>카카오스토리</li>
+                                <li>블로그</li>
+                                <li>네이버포스트</li>  드롭 다운기능 -->
+                            </ul>
+                        </li>
+                        <li><a href="">한국어</a></li>
+                    </ul>
+                </a>
+            </div>
+            
+        </div>
+        <div class="header-mid">
+            <div class="header-mid-container">
+                <img src="./images/logo_main_re.gif" alt="">
+                <div class="search-container">
+                    <div class="serach-box">
+                        <label for="search"></label>
+                        <input type="text" id="search" placeholder="검색어를 입력해 주세요.">
+                    </div>
+                </div>
+                <div class="weather">
+                    <a href="#">
+                        <img src="./images/air_icon.gif" alt="">
+                        미세먼지 보통 53㎍/㎥</a>
+                    <a href="#"> &nbsp;
+                        <img src="./images/air_icon1.gif" alt="">
+                        초미세먼지 보통 31㎍/㎥</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot">
+            <div class="gnb">
+                <ul class="gnb-id">
+                    <li class="gnb-first">
+                        <img src="./images/field_icon.gif" alt="">
+                        <a href="#">
+                        <span>
+                            분야별정보
+                            <img src="./images/field_arrow.gif" alt="">
+                        </span>
+                        </a>
+                    </li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">시민참여</a></li>
+                    <li><a href="#">민원</a></li>
+                    <li><a href="#">행정정보</a></li>
+                    <li><a href="#">화성시소개</a></li>
+                    <li><a href="#"><img src="./images/all_gnb_btn.gif" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section class="section1"> <!-- 첫 번째 섹션-->
+        <div class="main-Banner ">
+            <ul class="Banner-ul">
+                <li><a href="#"><img src="./images/firstbanner1.jpg" alt=""></a></li>
+                <div class="aa">
+                    <li><strong>안녕하세요</strong><br><span><em>정명근</em></span><strong>입니다</strong>.
+                        <li class="mayor-box">화성 열린사장실<img src="./images/banner_next.gif" alt="" width="17px" height="17px"></li>
+                    </li>
+                    <ul class="sidebar">
+                        <li><a href="#" class="test"><img src="./images/mayor_icon05.gif" alt="" class="lq">
+                        <span class="side-text">조직도</span></a></li>
+                        <li><a href="#"><img src="./images/mayor_icon01.gif" alt="" class="lq">
+                        <span class="side-text">직원찾기</span></a></li>
+                        <li><a href="#"><img src="./images/mayor_icon02.gif" alt="" class="lq">
+                        <span class="side-text">행사안내</span></a></li>
+                        <li><a href="#"><img src="./images/mayor_icon03.gif" alt="" class="lq">
+                        <span class="side-text">민원신청</span></a></li>
+                    </ul>
+                    <div class="bb">
+                       <li><a href=""><strong>시민 <br>소통광장</strong></a></li>
+                       <li><a href=""><strong>민생8기 <br>공약</strong></a></li>
+                       <li><a href=""><strong>시민 <br>정착예산</strong></a></li>
+                       <li><a href=""><strong>화성시민 <br>성공정착</a></strong></li>
+                    </div>
+                    
+                </div>
+            </ul>
+        </div>
+        <div class="sub-Banner">
+            <div class="sub-left">
+              <ul class="jebu">
+                <li>제부도 바닷길 <img src="./images/jebu_more.gif" alt=""></li>
+                <li>2022-11-19(토)</li>
+                <li>04:28~13:39</li>
+                <li>17:29~02:39</li>
+              </ul>
+            </div>
+            <div class="sub-mid">
+                <div class="table">
+                    <ul class="table-title">
+                        <li>시정알림방</li>
+                        <li>보도자료</li>
+                        <li>공고/고시</li>
+                        <li>채용정보</li>
+                        <li><img src="./images/latest_more.gif" alt=""></li>
+                    </ul>
+                    <ul class="table-contents">
+                        <li>
+                            「인천시청역 힐스테이트」 장애인 특별공급 안내
+                             <time>2022-11-21</time>
+                        </li>
+                        <li class="bq">○ 공급처 : ㈜현대건설 현대건설 T. 032-427-9519
+                                <br><br>
+                            ○ 공급위치 : 인천광역시 남동구 간석동 900-138번지 일원
+                            <br>
+                            ○ 공급유형 및... </li>
+                        <li>   서울「강동 헤리티지 자이」기관추천(장애인) 특별공급 안내  <time>2022-11-21</time> </li>
+                        <li>   『화성시 건축사 업무대행 관리 시스템』 설명회 개최 알림 [   <time>2022-11-21</time></li>
+                        <li>   『오산~용인 고속도로 민간투자사업』 환경영향평가서(초안) 공  <time>2022-11-21</time> </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-right">
+                <div class="sub-r-top"></div>
+                <ul class="sub-r-bot">
+                    <li><img src="./images/banner_prev.gif" alt=""></li>
+                    <li>
+                        <span>1</span>
+                        / 11
+                    </li>
+                    <li><img src="./images/banner_next.gif" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2"> <!-- 두 번째 섹션-->
+        <div class="service">
+            <div class="serviceimg">
+                
+            </div>
+            <div class="table-2">
+                <table >
+                    <tr class="table-tr">
+                        <td class="table-td"> 
+                            <img src="./images/service_ico01.gif" alt="">
+                            통합예약
+                        </td>
+                        <td class="table-td"><img src="./images/service_ico02.gif" alt="">
+                        <span>부패,갑질행위<br>(익명신고)</span>
+                        </td>
+                        <td class="table-td"><img src="./images/service_ico03.gif" alt="">포토 갤러리</td>
+                        <td class="table-td"><img src="./images/service_ico04.gif" alt="">화성시<br>지속가능발전목표<br>(HS-SDGs)</td>
+                        <td class="table-td"><img src="./images/service_ico05.gif" alt="">4.15온라인 추모관</td>
+                    </tr>
+                    <tr class="table-tr">
+                        <td class="table-td"><img src="./images/service_ico06.gif" alt="">화성시 e-Book</td>
+                        <td class="table-td"><img src="./images/service_ico07.gif" alt="">시민맞춤형<br>정보제공신청</td>
+                        <td class="table-td"><img src="./images/service_ico08.gif" alt="">정부 24</td>
+                        <td class="table-td"><img src="./images/service_ico10.gif" alt="">우리동네 보건소</td>
+                        <td class="table-td"><img src="./images/service_ico11.gif" alt="">공공와이파이<br>현황</td>
+                    </tr>
+                    <tr class="table-tr">
+                        <td class="table-td"><img src="./images/service_ico11.gif" alt="">행정복지센터</td>
+                        <td class="table-td"><img src="./images/service_ico12.gif" alt="">시민정보화교육</td>
+                        <td class="table-td"><img src="./images/service_ico13.gif" alt="">항공사진 웹서비스</td>
+                        <td class="table-td"><img src="./images/service_ico15.gif" alt="">화성데이터로</td>
+                        <td class="table-td"><img src="./images/service_ico16.gif" alt="">온나라 정책연구</td>
+                    </tr>
+                    <tr class="table-tr">
+                        <td class="table-td"><img src="./images/service_ico17.gif" alt="">화성 주정차<br>민원서비스</td>
+                        <td class="table-td"><img src="./images/service_ico18.gif" alt="">화성시 무상교통</td>
+                        <td class="table-td"><img src="./images/123.jpg" alt="">대기환경정보서비스</td>
+                        <td class="table-td"><img src="./images/service_ico20.png" alt="">화성시 자치법규<br>원문열람시스템</td>
+                        <td class="table-td"><img src="./images/service_ico19.gif" alt="">적극행정人<br>명예의 전당</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <div class="sub-service">
+            <div class="sub-info">
+                <ul class="title">
+                    <li><img src="./images/work.gif" alt="">
+                    <strong>함께하는 일자리 구인정보</strong></li>
+                    <li class="work-btn">
+                        <!-- 1 / <span>10</span> 
+                        <div class="btn-img">
+                            <img src="./images/work_prev.gif" alt="">
+                            <img src="./images/work_stop.gif" alt="">
+                            <img src="./images/work_next.gif" alt="">
+                        </div> -->
+                        <img src="./images/work_more.gif" alt="">
+                    </li>
+                </ul>
+                <ul class="work-box">
+                    <li class="box1">
+                        <strong class="box1-s">남양테크</strong> <br>
+                        <span class="box1-s2">3D CAM(흑연 전극 모델링)경력자 및 신입..</span>
+                        <span class="box1-s3">경기 화성시 <time>2022-11-18</time> </span>
+                    </li>
+                    <li class="box1">
+                        <strong class="box1-s">주식회사 임플로이</strong> <br>
+                        <span class="box1-s2">자재,구매,물품출하,품질검사 사원 모집</span>
+                        <span class="box1-s3">경기 화성시 <time>2022-11-18</time> </span>
+                    </li>
+                    <li class="box1">
+                        <strong class="box1-s">남양테크</strong> <br>
+                        <span class="box1-s2">3D CAM(흑연 전극 모델링)경력자 및 신입..</span>
+                        <span class="box1-s3">경기 화성시 <time>2022-11-18</time> </span>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="two-info">
+                <ul class="two-info-ul">
+                    <li class="two-info-f">
+                        <a href="#" class="info-f-a">
+                            <span>화성시 소식지</span>
+                            <span>화성의 소식을 <br>확인하세요.</span>
+                           
+                        </a>
+                    </li>
+                    <li class="two-info-l">
+                        <a href="#" class="info-l-a">
+                            <span>화성에서 온 TV</span>
+                            <span>새로운 소식들과 재미 <br>있는 영상들로 만나요!</span>
+                           
+                        </a>
+                    </li>
+                </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <ul class="ftop-link">
+                <li class="ftop-li">
+                    <a href="#">직속기관/사업소  &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;  <span class="plus">+</span></a>
+                </li>
+                <li class="ftop-li"><a href="#">화성시 패밀리 사이트 &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                     <span class="plus">+</span></a>
+                </li>
+                <li class="ftop-li"><a href="#">공공/기타기관 &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp; <span class="plus">+</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-mid">
+            <div class="fmid-div">
+                <ul class="fmid-ul">
+                    <li class="orange"><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">시청오시는길</a></li>
+                    <li><a href="#">직원전화번호부</a></li>
+                    <li><a href="#">뷰어프로그램 다운로드</a></li>
+                    <li><a href="#">원격지원 서비스</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <ul class="fb-ul">
+                <li >
+                    <img src="./images/footer_logo.gif" alt="">
+                </li>
+                <li>
+                    <p>(우)18274 경기도 화성시 남양읍 시청로 159 <br>
+                        Copyright (c) 2019 by hwaseong city all rights reserved.</p>
+                    <p class="right">본 홈페이지는 게시된 이메일주소의 자동수집을 거부하며 이를 위반할 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                </li>
+                <li>
+                    <img src="./images/call_img01.gif" alt="">
+                </li>
+                <li>
+                    <img src="./images/fb.jpg" alt="" width="100px">
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
